@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Area Circulo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- Ventana principal del diálogo --- */
+QDialog {
+background-color: #1e1e1e; /* fondo oscuro */
+color: #f1f1f1;
+font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+font-size: 14px;
+}
+
+/* --- Etiquetas --- */
+QLabel {
+color: #f1f1f1;
+font-size: 13px;
+font-weight: bold;
+}
+
+/* --- Campos de entrada --- */
+QLineEdit {
+background-color: #2c2c2c;
+color: #ffffff;
+border: 1px solid #555;
+border-radius: 4px;
+padding: 4px;
+}
+
+QLineEdit:focus {
+border: 1px solid #0078d7; /* azul al enfocarse */
+}
+
+/* --- Botón Calcular --- */
+QPushButton {
+background-color: #0078d7; /* azul estilo Windows */
+color: #ffffff;
+border-radius: 4px;
+padding: 6px 12px;
+font-weight: bold;
+}
+
+QPushButton:hover {
+background-color: #005a9e; /* azul más oscuro al pasar el mouse */
+}
+
+QPushButton:pressed {
+background-color: #004578; /* azul profundo al hacer clic */
+}
+
+/* --- Resultado (label) --- */
+#lbl_resultado {
+color: #00ff88; /* verde llamativo para el resultado */
+font-size: 14px;
+font-weight: bold;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ingresa el valor del radio:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_radio">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>70</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>150</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>240</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
